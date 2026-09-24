@@ -1,0 +1,60 @@
+{
+  "unique_cards": 280,
+  "cards_with_rating": 280,
+  "by_section": {
+    "White": 39,
+    "Blue": 39,
+    "Black": 39,
+    "Red": 40,
+    "Green": 37,
+    "Artifacts and Lands": 32,
+    "Multicolor": 54
+  },
+  "by_rarity": {
+    "Common": 81,
+    "Uncommon": 109,
+    "Rare": 64,
+    "Mythic": 26
+  },
+  "group_rated_cards": [
+    "Dedicated Commons (Group rating for 'Planeswalker Lands')",
+    "Deserted Beach (Group rating for 'Rare Slow Lands')",
+    "Fatehold Annex (Group rating for 'Planeswalker Lands')",
+    "Formidable Commons (Group rating for 'Planeswalker Lands')",
+    "Haunted Ridge (Group rating for 'Rare Slow Lands')",
+    "Innovative Commons (Group rating for 'Planeswalker Lands')",
+    "Konstrari Annex (Group rating for 'Planeswalker Lands')",
+    "Meticulous Commons (Group rating for 'Planeswalker Lands')",
+    "Overgrown Farmland (Group rating for 'Rare Slow Lands')",
+    "Rockfall Vale (Group rating for 'Rare Slow Lands')",
+    "Shipwreck Marsh (Group rating for 'Rare Slow Lands')",
+    "Stingerquill Annex (Group rating for 'Planeswalker Lands')",
+    "Theorix Annex (Group rating for 'Planeswalker Lands')",
+    "Transformative Commons (Group rating for 'Planeswalker Lands')",
+    "Vigorbloom Annex (Group rating for 'Planeswalker Lands')"
+  ],
+  "duplicates_skipped": [],
+  "parse_or_verification_warnings": [],
+  "notes": [
+    "Tetsuko Umezawa, Fugitive: article image is a non-FRA printing; matched to the FRA printing by name",
+    "Unsummon: article image is a non-FRA printing; matched to the FRA printing by name",
+    "Last Gasp: article image is a non-FRA printing; matched to the FRA printing by name",
+    "Yargle, Glutton of Urborg: article image is a non-FRA printing; matched to the FRA printing by name",
+    "Blazing Crescendo: article image is a non-FRA printing; matched to the FRA printing by name",
+    "Chandra, Torch of Defiance: article image is a non-FRA printing; matched to the FRA printing by name",
+    "Tarmogoyf: article image is a non-FRA printing; matched to the FRA printing by name",
+    "Deserted Beach: article image is a non-FRA printing; matched to the FRA printing by name",
+    "Haunted Ridge: article image is a non-FRA printing; matched to the FRA printing by name",
+    "Overgrown Farmland: article image is a non-FRA printing; matched to the FRA printing by name",
+    "Rockfall Vale: article image is a non-FRA printing; matched to the FRA printing by name",
+    "Shipwreck Marsh: article image is a non-FRA printing; matched to the FRA printing by name"
+  ],
+  "unique_cards_in_set_on_scryfall": 285,
+  "cards_in_set_not_reviewed": [
+    "Forest",
+    "Island",
+    "Mountain",
+    "Plains",
+    "Swamp"
+  ]
+}
