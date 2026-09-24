@@ -412,6 +412,7 @@ main { padding: 1rem 1.5rem 2.5rem; }
 .kpi .s { font-size: 0.78rem; color: var(--muted); }
 .panel { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 0.25rem; }
 .charts { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 0.75rem; margin-bottom: 1.25rem; }
+.charts .panel > div { min-height: 380px; }
 @media (max-width: 900px) { .charts { grid-template-columns: 1fr; } }
 .hint { color: var(--muted); font-size: 0.8rem; margin: 0 0 0.75rem; }
 h2 { font-size: 1rem; font-weight: 650; margin: 0 0 0.5rem; }
@@ -498,8 +499,15 @@ const layoutBase = {
   paper_bgcolor: "#fffcf6",
   plot_bgcolor: "#fffcf6",
   font: { color: "#1c1916", size: 12 },
-  margin: { t: 48, r: 16, b: 48, l: 48 },
-  legend: { orientation: "h", y: 1.14 },
+  margin: { t: 56, r: 20, b: 100, l: 52 },
+  legend: {
+    orientation: "h",
+    y: -0.34,
+    yanchor: "top",
+    x: 0.5,
+    xanchor: "center",
+    font: { size: 11 }
+  },
   hovermode: "x unified"
 };
 
@@ -676,15 +684,18 @@ function redraw() {
   renderKpis(v.series);
   Plotly.react("chart", lineTraces(v.series), {
     ...layoutBase,
-    title: v.title,
-    xaxis: { title: "J2SJosh rating", dtick: 0.5, range: [0.3, 5.2] },
-    yaxis: { title: "Number of cards", rangemode: "tozero" }
+    title: { text: v.title, x: 0, xanchor: "left", pad: { t: 4, b: 8 } },
+    xaxis: { title: { text: "J2SJosh rating", standoff: 10 }, dtick: 0.5, range: [0.3, 5.2] },
+    yaxis: { title: { text: "Number of cards", standoff: 8 }, rangemode: "tozero" }
   }, { responsive: true, displayModeBar: false });
   Plotly.react("box", boxTraces(v.series), {
     ...layoutBase,
+    showlegend: false,
     hovermode: "closest",
-    title: "Rating spread",
-    yaxis: { title: "J2SJosh rating", range: [0, 5.3] }
+    margin: { t: 56, r: 16, b: 72, l: 52 },
+    title: { text: "Rating spread", x: 0, xanchor: "left", pad: { t: 4, b: 8 } },
+    xaxis: { automargin: true },
+    yaxis: { title: { text: "J2SJosh rating", standoff: 8 }, range: [0, 5.3] }
   }, { responsive: true, displayModeBar: false });
   drawTable();
 }
